@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Module Test</title>
+  </head>
+  <body>
+    <h1>MY Public IP ADDRESS : <span id="ip"></span></h1>
+    <button id="btn" onclick="getData()">
+      <span style="color: white">Get Data</span>
+    </button>
+    <div id="data-container">
+      <div class="part-1">
+        <div>
+          <p>lat: <span id="lat"></span></p>
+          <p>lon: <span id="lon"></span></p>
+        </div>
+        <div>
+          <p>city: <span id="cty"></span></p>
+          <p>region: <span id="rgn"></span></p>
+        </div>
+        <div>
+          <p>organisation: <span id="orgstion"></span></p>
+          <p>Hostname: <span id="hstname"></span></p>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://maps.google.com/maps?q=17.3850, 78.5238&z=15&output=embed"
+          width="1300"
+          height="500"
+          frameborder="0"
+          style="border: 0"
+        ></iframe>
+      </div>
+      <br>
+      <p>Time Zone:<span id="tnz"></span></p>
+      <p>Date And Time:<span id="time"></span></p>
+      <p>pin code:<span id="pincode"></span></p>
+      <p>Message:<span id="msg"></span></p>
+
+      <br> 
+      <form>
+        <input type="text" id="filterInput" placeholder="Filter...">
+      </form>
+<br> 
+
+      <div class="container" id="box">
+        <div class="row row-cols-2">
+          <div class="col" id="b1">Name <br>
+            Branch Type <br>
+            Delivery Status <br>
+            District <br>
+            Division <br></div>
+          <div class="col" id="b2">Name<br>
+            Branch Type<br>
+            Delivery Status<br>
+            District<br>
+            Division<br></div>
+          <div class="col" id="b3">Name<br>
+            Branch Type<br>
+            Delivery Status<br>
+            District<br>
+            Division<br></div>
+          <div class="col" id="b4">Name<br>
+            Branch Type<br>
+            Delivery Status<br>
+            District<br>
+            Division<br></div>
+          <div class="col" id="b5">Name<br>
+            Branch Type<br>
+            Delivery Status<br>
+            District<br>
+            Division<br></div>
+          <div class="col" id="b6">Name<br>
+            Branch Type<br>
+            Delivery Status<br>
+            District<br>
+            Division<br></div>
+        </div>
+      </div>
+    </div>
+   
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
